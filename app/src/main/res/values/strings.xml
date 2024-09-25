@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Android Abschluss</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="willkommen" />
+    <string name="sign_up">sign up</string>
+    <string name="login">Login</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="forgot_password">forgot_password?</string>
+    <string name="signup">signup</string>
+    <string name="cancel">cancel</string>
+    <string name="new_user">new user</string>
+    <string name="Begrüßung">Vielen Dank für die Interesse an die App,behalte als Nutzer jegeliche Events deiner Stadt in Überblick und tausche dich mit anderen über eure Erlebnisse aus.
+    Platziere als Veranstalter deine Events und Analysiere deine Performance mit Hilfe unserer Tools.</string>
+    <string name="veranstalter">Veranstalter</string>
+    <string name="nutzer">Nutzer</string>
+    <string name="veranstalterBegrüßung">Ihre Anmeldung war Erfolgreich. Sie werden nun weitergeleitet....</string>
+    <string name="party_kino_konzerte_flohmarkt">Party Kino Konzerte Flohmarkt</string>
+    <string name="gerade_online">Gerade Online</string>
+    <string name="empfehlung_in_k_ln">Empfehlung in Köln</string>
+    <string name="my_map_api_key">AIzaSyBGiY53qXkIkT_iujayRBBN3J6OyXpGO5U</string>
+</resources>

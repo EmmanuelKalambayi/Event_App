@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startseiteFragment">
+
+
+    <fragment
+        android:id="@+id/empfehlungFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.EmpfehlungFragment"
+        android:label="fragment_empfehlung"
+        tools:layout="@layout/fragment_empfehlung" >
+        <action
+            android:id="@+id/action_empfehlungFragment_to_empfehlungDetailFragment"
+            app:destination="@id/empfehlungDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="de.syntax.androidabschluss.authentication.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login_test" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profilUserFragment"
+            app:destination="@id/profilUserFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profilVeranstalterFragment"
+            app:destination="@id/profilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nutzerFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.NutzerFragment"
+        android:label="fragment_nutzer"
+        tools:layout="@layout/fragment_nutzer" >
+        <action
+            android:id="@+id/action_nutzerFragment_to_profilUserFragment"
+            app:destination="@id/profilUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/veranstalterFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.VeranstalterFragment"
+        android:label="fragment_veranstalter"
+        tools:layout="@layout/fragment_veranstalter" >
+        <action
+            android:id="@+id/action_veranstalterFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startseiteFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.StartseiteFragment"
+        android:label="StartseiteFragment" >
+        <action
+            android:id="@+id/action_startseiteFragment_to_empfehlungFragment"
+            app:destination="@id/empfehlungFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/empfehlungDetailFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.EmpfehlungDetailFragment"
+        android:label="fragment_empfehlung_detail"
+        tools:layout="@layout/fragment_empfehlung_detail" >
+        <argument
+            android:name="eventId"
+            app:argType="integer" />
+        <argument
+            android:name="eventName"
+            app:argType="string" />
+        <argument
+            android:name="eventStart"
+            app:argType="string" />
+        <argument
+            android:name="eventEnde"
+            app:argType="string" />
+        <argument
+            android:name="eventImage"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_empfehlungDetailFragment_to_empfehlungFragment"
+            app:destination="@id/empfehlungFragment" />
+        <action
+            android:id="@+id/action_empfehlungDetailFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" >
+        <action
+            android:id="@+id/action_favouriteFragment_to_empfehlungDetailFragment"
+            app:destination="@id/empfehlungDetailFragment" />
+        <action
+            android:id="@+id/action_favouriteFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
+        <action
+            android:id="@+id/action_favouriteFragment_to_profilUserFragment"
+            app:destination="@id/profilUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sucheFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.SucheFragment"
+        android:label="fragment_suche"
+        tools:layout="@layout/fragment_suche" >
+        <action
+            android:id="@+id/action_sucheFragment_to_empfehlungDetailFragment"
+            app:destination="@id/empfehlungDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="de.syntax.androidabschluss.authentication.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_userSelectionFragment"
+            app:destination="@id/userSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userSelectionFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.UserSelectionFragment"
+        android:label="fragment_user_selection"
+        tools:layout="@layout/fragment_user_selection" >
+        <action
+            android:id="@+id/action_userSelectionFragment_to_veranstalterFragment"
+            app:destination="@id/veranstalterFragment" />
+        <action
+            android:id="@+id/action_userSelectionFragment_to_nutzerFragment"
+            app:destination="@id/nutzerFragment" />
+        <action
+            android:id="@+id/action_userSelectionFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_userSelectionFragment_to_empfehlungFragment"
+            app:destination="@id/empfehlungFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilUserFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.ProfilUserFragment"
+        android:label="fragment_profil_user"
+        tools:layout="@layout/fragment_profil_user" >
+        <action
+            android:id="@+id/action_profilUserFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statistikFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.StatistikFragment"
+        android:label="fragment_stastistik"
+        tools:layout="@layout/fragment_stastistik" >
+        <action
+            android:id="@+id/action_statistikFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
+    </fragment><fragment android:id="@+id/profilFragment" android:name="de.syntax.androidabschluss.ui.authentication.ProfilVeranstalterFragment" android:label="fragment_profil_veranstalter" tools:layout="@layout/fragment_profil_veranstalter">
+    <action
+        android:id="@+id/action_profilFragment_to_statistikFragment"
+        app:destination="@id/statistikFragment" />
+    <action
+        android:id="@+id/action_profilFragment_to_favouriteFragment"
+        app:destination="@id/favouriteFragment" />
+</fragment>
+</navigation>

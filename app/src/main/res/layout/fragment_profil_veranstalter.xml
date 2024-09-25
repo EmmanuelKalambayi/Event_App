@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profil_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEDDFB"
+    tools:context=".ui.authentication.ProfilVeranstalterFragment">
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip4"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="31dp"
+        android:text="     Datenschutz"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/kundensupportV_profile"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="77dp"
+        android:text="     Kundensupport"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/statistikV_profile" />
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/bewertungV_profile"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:text="     Bewerte uns"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kundensupportV_profile" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/statistikV_profile"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="41dp"
+        android:text="     Statistik Events"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stadtV_profile" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/stadtV_profile"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="     Stadt wechselen"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/jobsV_profile" />
+
+    <ImageView
+        android:id="@+id/profiel_veranstalter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="27dp"
+        android:src="@drawable/statusanzeige3"
+        app:layout_constraintBottom_toTopOf="@+id/eventsV_profil"
+        app:layout_constraintEnd_toStartOf="@+id/name_veranstalter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_veranstalter"
+        android:layout_width="142dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="28dp"
+        android:text="Name/veranstalter"
+        app:layout_constraintBottom_toTopOf="@+id/eventsV_profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/eventsV_profil"
+        android:layout_width="135dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/events"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profiel_veranstalter" />
+
+    <TextView
+        android:id="@+id/text_events_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="22dp"
+        android:text="Meine Events"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/favouritenV_profil"
+        app:layout_constraintEnd_toStartOf="@+id/kontakteV_profil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventsV_profil" />
+
+    <ImageView
+        android:id="@+id/kontakteV_profil"
+        android:layout_width="135dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="52dp"
+        android:background="@color/white"
+        android:src="@drawable/kontakte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eventsV_profil"
+        app:layout_constraintTop_toBottomOf="@+id/name_veranstalter" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="64dp"
+        android:text="Meine Kontakte"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_events_profil"
+        app:layout_constraintTop_toBottomOf="@+id/kontakteV_profil" />
+
+
+    <ImageView
+        android:id="@+id/favouritenV_profil"
+        android:layout_width="135dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:src="@drawable/eventsf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_events_profil" />
+
+    <TextView
+        android:id="@+id/textFavouritenV_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="29dp"
+        android:text="Meine Favouriten"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/verlosung_profile"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favouritenV_profil" />
+
+    <ImageView
+        android:id="@+id/verlosung_profile"
+        android:layout_width="135dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="49dp"
+        android:background="@color/white"
+        android:src="@drawable/tickts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/text_Verlosung_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="400dp"
+        android:text="Meine Verlosung"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textFavouritenV_profil"
+        app:layout_constraintTop_toBottomOf="@+id/verlosung_profile" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="240dp"
+        android:text="Einstellungen"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFavouritenV_profil" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/jobsV_profile"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:text="     Aktive Anzeigen"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="160dp"
+        android:src="@drawable/work"
+        app:layout_constraintEnd_toEndOf="@+id/jobsV_profile"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/language_24px"
+        app:layout_constraintEnd_toEndOf="@+id/stadtV_profile"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/jobsV_profile" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/stacked_bar_chart"
+        app:layout_constraintEnd_toEndOf="@+id/statistikV_profile"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stadtV_profile" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:src="@drawable/contact_support"
+        app:layout_constraintEnd_toEndOf="@+id/kundensupportV_profile"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/statistikV_profile" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/fiber_manual_record"
+        app:layout_constraintEnd_toEndOf="@+id/bewertungV_profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bewertungV_profile"
+        app:layout_constraintTop_toTopOf="@+id/kundensupportV_profile" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/shield"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chip4"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/profilV_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="31dp"
+        android:src="@drawable/logout"
+        app:layout_constraintBottom_toTopOf="@+id/kontakteV_profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name_veranstalter"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

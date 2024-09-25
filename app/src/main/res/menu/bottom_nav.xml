@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/empfehlungFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/calendar_month"
+        android:title="Empfehlung"/>
+
+    <item
+        android:id="@+id/sucheFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/search_24px"
+        android:title="Suche"/>
+
+    <item
+        android:id="@+id/favouriteFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/folgen"
+        android:title="Favourite"/>
+
+    <item
+        android:id="@+id/profilFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/profile"
+        android:title="Profil"/>
+
+</menu>

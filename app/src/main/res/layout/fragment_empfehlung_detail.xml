@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ui.authentication.EmpfehlungDetailFragment">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_event1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="836dp"
+                    android:background="#BABCF7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                        <Button
+                            android:id="@+id/teilnehmer_count_message"
+                            android:layout_width="70dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginBottom="220dp"
+                            android:backgroundTint="#BABCF7"
+                            android:text="0"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/teilnehmer_count_views" />
+
+                        <Button
+                            android:id="@+id/teilnehmer_count_views"
+                            android:layout_width="70dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginBottom="220dp"
+                            android:backgroundTint="#BABCF7"
+                            android:text="0"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/teilnehmer_count_message"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/teilnehmer_count_button" />
+
+                        <TextView
+                            android:id="@+id/land"
+                            android:layout_width="104dp"
+                            android:layout_height="57dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="108dp"
+                            android:text="Land"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/eventart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginTop="120dp"
+                            android:layout_marginEnd="313dp"
+                            android:text="EventArt"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/event_end" />
+
+                        <TextView
+                            android:id="@+id/stadt"
+                            android:layout_width="121dp"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="101dp"
+                            android:text="Stadt"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/land"
+                            app:layout_constraintTop_toBottomOf="@+id/organisatoren" />
+
+                        <TextView
+                            android:id="@+id/organisatoren"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="264dp"
+                            android:text="Organisatoren"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/status" />
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="333dp"
+                            android:text="Status"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/eventart" />
+
+                        <ImageView
+                            android:id="@+id/event_layout"
+                            android:layout_width="481dp"
+                            android:layout_height="232dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:foregroundGravity="center"
+                            android:src="@drawable/party"
+                            app:layout_constraintBottom_toTopOf="@+id/event_name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/event_start"
+                            android:layout_width="376dp"
+                            android:layout_height="27dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginBottom="36dp"
+                            android:text="start"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toTopOf="@+id/event_end"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.061"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/event_end"
+                            android:layout_width="369dp"
+                            android:layout_height="42dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginBottom="28dp"
+                            android:text="ende"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toTopOf="@+id/teilnahme"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.055"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/event_name"
+                            android:layout_width="119dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="partyName"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toTopOf="@+id/event_start"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.011"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <Button
+                            android:id="@+id/teilnahme"
+                            android:layout_width="109dp"
+                            android:layout_height="57dp"
+                            android:layout_marginStart="151dp"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginBottom="36dp"
+                            android:backgroundTint="#DEDDFB"
+                            android:text="Nehme Teil"
+                            app:layout_constraintBottom_toTopOf="@+id/teilnehmer_count_button"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <Button
+                            android:id="@+id/teilnehmer_count_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="220dp"
+                            android:backgroundTint="#BABCF7"
+                            android:text="0"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.498"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="33dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="56dp"
+                            android:src="@drawable/baseline_message_24"
+                            app:layout_constraintBottom_toTopOf="@+id/teilnehmer_count_button"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/imageView6" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="54dp"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="52dp"
+                            android:layout_marginBottom="16dp"
+                            android:src="@drawable/eyes"
+                            app:layout_constraintBottom_toTopOf="@+id/teilnehmer_count_views"
+                            app:layout_constraintStart_toEndOf="@+id/teilnahme"
+                            app:layout_constraintTop_toTopOf="@+id/event_end"
+                            app:layout_constraintVertical_bias="0.46" />
+
+                        <ImageView
+                            android:id="@+id/image_standort"
+                            android:layout_width="36dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="47dp"
+                            android:layout_marginBottom="140dp"
+                            android:src="@drawable/pin_drop"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/stadt"
+                            app:layout_constraintTop_toBottomOf="@+id/teilnehmer_count_views" />
+
+                        <ImageView
+                            android:id="@+id/back_Bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginEnd="366dp"
+                            android:layout_marginBottom="12dp"
+                            android:src="@drawable/backbuttom"
+                            app:layout_constraintBottom_toTopOf="@+id/event_layout"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/share_Bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="304dp"
+                            android:layout_marginEnd="38dp"
+                            android:layout_marginBottom="12dp"
+                            android:src="@drawable/share"
+                            app:layout_constraintBottom_toTopOf="@+id/event_layout"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/back_Bottom" />
+
+                        <ImageButton
+                            android:id="@+id/imageView74"
+                            android:layout_width="45dp"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="204dp"
+                            android:layout_marginTop="18dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:src="@drawable/folgen"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/event_name"
+                            app:layout_constraintTop_toBottomOf="@+id/event_layout" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

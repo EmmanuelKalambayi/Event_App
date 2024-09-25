@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_cardView"
+    android:layout_width="160dp"
+    android:layout_height="170dp"
+    android:layout_margin="8dp"
+    android:alpha="0.85"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="5dp"
+    >
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BABCF7">
+        >
+
+        <ImageView
+            android:id="@+id/event_layout_suche"
+            android:layout_width="161dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/party"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/event_name_suche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="partyName"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_layout_suche" />
+
+        <!--` <ImageButton
+             android:id="@+id/imageButton_suche"
+             android:layout_width="33dp"
+             android:layout_height="32dp"
+             android:layout_marginEnd="4dp"
+             android:layout_marginBottom="44dp"
+             android:backgroundTint="#DA0B0B"
+             android:src="@drawable/folgen"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/event_layout_suche" />-->
+
+         <TextView
+             android:id="@+id/event_start_suche"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="4dp"
+             android:layout_marginEnd="102dp"
+             android:text="start"
+             android:textSize="10sp"
+             app:layout_constraintEnd_toStartOf="@+id/imageButton_suche"
+             app:layout_constraintHorizontal_bias="0.0"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/event_name_suche" />
+
+         <TextView
+             android:id="@+id/event_ende_suche"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="4dp"
+             android:layout_marginTop="12dp"
+             android:layout_marginEnd="102dp"
+             android:text="ende"
+             android:textSize="10sp"
+             app:layout_constraintEnd_toStartOf="@+id/imageButton_suche"
+             app:layout_constraintHorizontal_bias="0.0"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/event_name_suche" />
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+ </com.google.android.material.card.MaterialCardView>
+
